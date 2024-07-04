@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tabel</title>
+
+</head>
+<style>
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 50px;
+    }
+
+    th,td{
+        border: 5px solid blue;
+        padding: 10px;
+        text-align: center;
+    }
+    th{
+        background-color: blueviolet;
+    }
+    td{
+        background-color: aqua;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <th>Heading1</th>
+            <th>Heading2</th>
+            <th>Heading3</th>
+        </tr>
+        <tr>
+            <td>Column1</td>
+            <td>Column2</td>
+            <td>Column3</td>
+                
+           
+        </tr>
+        <tr>
+            <td rowspan="2">Column4</td>
+            <td>Column5</td>
+            <td>Column6</td>
+        </tr>
+        <tr>
+            <td>Column8</td>
+            <td>Column9</td>
+        </tr>
+        <tr>
+            <td colspan="2">Column10</td>
+            <td>Column11</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <td>First Column of outler lablet</td>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>First Row of inner table</td>
+                        <td>First Row of inner table</td>
+                    </tr>
+                    <tr>
+                        <td>second row of inner</td>
+                        <td>first row of inner</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>First Row of inner table</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>second row of inner</td>
+                        
+                    </tr>
+                </table>
+            </td>
+            <td>First Column of outler lablet</td>
+        </tr>
+        
+
+    </table>
+
+    <form action="https://www.google.com/" target="_blank">
+        <label for="first name">Please Insert First Name</label>
+        <input type="text" name="first name">
+        <br>
+        <br>
+        <label for="last name">Please Insert Last Name</label>
+        <input type="text">
+        <br>
+        <br>
+        <label for="email">Please Insert Email</label>
+        <input type="email" required>
+        <br>
+        <br>
+        <label for="address">Please Insert Address</label>
+        <textarea name="address" cols="50" rows="20"></textarea>
+        <br>
+        <br>
+
+        <label for="password">Please Insert Password</label>
+        <input type="password">
+        <br>
+        <br>
+        <input type="submit">
+
+    </form>
+
+    
+</body>
+</html>
